@@ -1,0 +1,53 @@
+.day {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 2px;
+    position: relative;
+}
+
+.day:hover > .popover {
+    display: block;
+}
+
+
+
+.popover {
+    display: none;
+    position: absolute;
+    top: -100px;
+    left: -103px;
+}
+
+
+.content {
+  min-width: 200px;
+  min-height: 30px;
+  position: relative;
+  background: black;
+  border-radius: .4em;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.content::after {
+ content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: black;
+  border-bottom: 0;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}

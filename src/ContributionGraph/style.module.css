@@ -1,0 +1,8 @@
+.container_data {
+    width: 1300px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+}
