@@ -1,7 +1,12 @@
-import { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import styles from "./style.module.css";
 
-const DayComponent = ({ date, value }: { date: string; value: any }) => {
+interface DayComponentProps {
+  date: string;
+  value: number;
+}
+
+const DayComponent: FC<DayComponentProps> = ({ date, value }) => {
   const [color, setColor] = useState("rgba(237, 237, 237, 1)");
   useEffect(() => {
     if (value >= 1 && value <= 9) {

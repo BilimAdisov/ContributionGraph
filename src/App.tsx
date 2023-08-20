@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import { ContributionGraph } from "./ContributionGraph";
+import "./App.css";
 
 function App() {
-  const [data, setData] = useState<any>([]);
+  const [data, setData] = useState<any>();
 
   useEffect(() => {
     fetch("https://dpg.gg/test/calendar.json")
