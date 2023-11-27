@@ -4,42 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 * {
   padding: 0;
   margin: 0;
-  
-}
-
-/* ContributionGraph.css */
-.contribution-graph {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.square {
-  width: 10px;
-  height: 10px;
-  margin: 1px;
-}
-
-.color-0 {
-  background-color: #ebedf0;
-}
-
-.color-1 {
-  background-color: #9be9a8;
-}
-
-.color-2 {
-  background-color: #40c463;
-}
-
-.color-3 {
-  background-color: #30a14e;
-}
-
-.color-4 {
-  background-color: #216e39;
 }
