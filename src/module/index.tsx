@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 
 interface ContributionData {
@@ -9,7 +9,7 @@ const ContributionGraph = () => {
   const [data, setData] = useState<any>({});
 
   useEffect(() => {
-    fetch("https://dpg.gg/test/calendar.json") // Замените на URL, откуда вы получаете данные
+    fetch("https://dpg.gg/test/calendar.json")
       .then((response) => response.json())
       .then((data: ContributionData[]) => {
         setData(data);
